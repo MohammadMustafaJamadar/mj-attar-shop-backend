@@ -78,7 +78,9 @@ WSGI_APPLICATION = 'mj_attar_shop_backend_apis.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
+        # 'ENGINE': 'djongo',
         'NAME': BASE_DIR / 'db.sqlite3',
+        # 'NAME': 'mongodb://localhost:27017/',
     }
 }
 
@@ -123,3 +125,6 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Setup for async/await
+# ASGI_APPLICATION = 'mj_attar_shop_backend_apis.asgi.application'
