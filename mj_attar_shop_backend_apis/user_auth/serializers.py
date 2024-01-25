@@ -1,8 +1,9 @@
 from rest_framework import serializers
-from signupapis.models import UserSignupDataModal
+from user_auth.models import UserSignupDataModal
 
 
-class UserSignuSerializer (serializers.HyperlinkedModelSerializer):
+# User-Signup Serializer 
+class UserSignuSerializer (serializers.ModelSerializer):
     user_id = serializers.ReadOnlyField()
 
     class Meta:

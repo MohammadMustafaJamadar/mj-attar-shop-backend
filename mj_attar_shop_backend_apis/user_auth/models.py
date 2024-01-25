@@ -1,8 +1,6 @@
 from django.db import models
 
-# Create your models here.
-
-
+# User-Signup Schema/Modal
 class UserSignupDataModal (models.Model):
     user_id = models.AutoField(primary_key=True)
     user_firstname = models.CharField(max_length=50, blank=False, null=False)
